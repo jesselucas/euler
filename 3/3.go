@@ -9,7 +9,7 @@ func main() {
 
 	// Create a slice of all primes for n
 	p := listPrimes(n)
-	fmt.Println(p)
+
 	// Print out the last prime, which will be the largest
 	fmt.Println(p[len(p)-1])
 }
@@ -18,7 +18,7 @@ func main() {
 func listPrimes(n int64) []int64 {
 	primes := []int64{} // store primes
 
-	// starting at 2 (smallest prime)
+	// Starting at 2 (smallest prime)
 	for i := int64(2); i < n; i++ {
 		// Is i a prime of n?
 		if n%i == 0 {
